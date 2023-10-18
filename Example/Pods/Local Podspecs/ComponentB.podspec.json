@@ -1,0 +1,22 @@
+{
+  "name": "ComponentB",
+  "version": "0.1.0",
+  "summary": "A short description of ComponentB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pengchao/ComponentB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pengchao": "pengchao@dreame.tech"
+  },
+  "source": {
+    "git": "https://github.com/pengchao/ComponentB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ComponentB/Classes/**/*"
+}
