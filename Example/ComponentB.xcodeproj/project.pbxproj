@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6FBF86B17977C6759DF2A3 /* Pods_ComponentB_Example_ComponentBBinary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C07694CC655BAD968F351D /* Pods_ComponentB_Example_ComponentBBinary.framework */; };
 		3A13A8DC7986F690D746412A /* Pods_ComponentB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558DED9D922C553B4F7F27A /* Pods_ComponentB_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -27,6 +28,10 @@
 		E6161CB32AE108FC0055DCB1 /* ComponentBBinary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6161CAC2AE108FC0055DCB1 /* ComponentBBinary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6161CBA2AE109EA0055DCB1 /* Customer.h in Headers */ = {isa = PBXBuildFile; fileRef = E6161CB82AE109EA0055DCB1 /* Customer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6161CBB2AE109EA0055DCB1 /* Consumter.h in Headers */ = {isa = PBXBuildFile; fileRef = E6161CB92AE109EA0055DCB1 /* Consumter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6732E442AE125FC004846C3 /* Customer.m in Headers */ = {isa = PBXBuildFile; fileRef = E6161C5E2AE0F6180055DCB1 /* Customer.m */; };
+		E6732E452AE12602004846C3 /* Consumter.m in Headers */ = {isa = PBXBuildFile; fileRef = E6161C622AE0F6180055DCB1 /* Consumter.m */; };
+		E6732E482AE1260C004846C3 /* Consumter.m in Sources */ = {isa = PBXBuildFile; fileRef = E6732E462AE1260B004846C3 /* Consumter.m */; };
+		E6732E492AE1260C004846C3 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6732E472AE1260C004846C3 /* Customer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,8 @@
 		E6161CAC2AE108FC0055DCB1 /* ComponentBBinary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComponentBBinary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6161CB82AE109EA0055DCB1 /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Customer.h; path = ../ComponentB/Classes/Customer.h; sourceTree = "<group>"; };
 		E6161CB92AE109EA0055DCB1 /* Consumter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Consumter.h; path = ../ComponentB/Classes/Consumter.h; sourceTree = "<group>"; };
+		E6732E462AE1260B004846C3 /* Consumter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Consumter.m; path = ../ComponentB/Classes/Consumter.m; sourceTree = "<group>"; };
+		E6732E472AE1260C004846C3 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customer.m; path = ../ComponentB/Classes/Customer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6FBF86B17977C6759DF2A3 /* Pods_ComponentB_Example_ComponentBBinary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				E6161CB92AE109EA0055DCB1 /* Consumter.h */,
+				E6732E462AE1260B004846C3 /* Consumter.m */,
 				E6161CB82AE109EA0055DCB1 /* Customer.h */,
+				E6732E472AE1260C004846C3 /* Customer.m */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ComponentB */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -271,6 +281,8 @@
 			files = (
 				E6161CBA2AE109EA0055DCB1 /* Customer.h in Headers */,
 				E6161CBB2AE109EA0055DCB1 /* Consumter.h in Headers */,
+				E6732E452AE12602004846C3 /* Consumter.m in Headers */,
+				E6732E442AE125FC004846C3 /* Customer.m in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +341,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6161CB42AE108FD0055DCB1 /* Build configuration list for PBXNativeTarget "ComponentBBinary" */;
 			buildPhases = (
+				F8641A5302DF15F6A48A4A48 /* [CP] Check Pods Manifest.lock */,
 				E6161CA72AE108FC0055DCB1 /* Headers */,
 				E6161CA82AE108FC0055DCB1 /* Sources */,
 				E6161CA92AE108FC0055DCB1 /* Frameworks */,
@@ -446,11 +459,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ComponentB_Example/Pods-ComponentB_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ComponentB/ComponentB.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ComponentB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -473,6 +486,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ComponentB_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8641A5302DF15F6A48A4A48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComponentB_Example-ComponentBBinary-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -504,6 +539,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6732E482AE1260C004846C3 /* Consumter.m in Sources */,
+				E6732E492AE1260C004846C3 /* Customer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -616,6 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -711,6 +750,7 @@
 		};
 		E6161CB52AE108FD0055DCB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D3BF4809A9B5BFD69920C9 /* Pods-ComponentB_Example-ComponentBBinary.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -765,6 +805,7 @@
 		};
 		E6161CB62AE108FD0055DCB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819D3D6BB98B24629E1D70EA /* Pods-ComponentB_Example-ComponentBBinary.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

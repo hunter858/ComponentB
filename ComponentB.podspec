@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
   if ENV['Lib_Source'] || ENV['AllLib_Source']
       s.source_files = 'ComponentB/Classes/**/*'
   else
-      s.public_header_files = 'ComponentB/*.{h}'
+      s.source_files = 'ComponentB/**/*.h'
       s.vendored_frameworks = 'ComponentB/Products/ComponentBBinary.framework'
-      # s.dependency 'AFNetworking', '~> 2.3'
+      s.dependency 'AFNetworking', '~> 2.3'
       # s.dependency 'SDWebImage', '~> 4.1.0'
   end
   

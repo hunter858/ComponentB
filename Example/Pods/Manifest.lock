@@ -1,15 +1,42 @@
 PODS:
-  - ComponentB (0.0.2)
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - ComponentB (0.0.7):
+    - AFNetworking (~> 2.3)
 
 DEPENDENCIES:
   - ComponentB (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   ComponentB:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ComponentB: 154e8665de40b7d6cede06271ce306316e1b9a83
+  AFNetworking: 9d57de7506959955d82fb5274ee4bec86b930e52
+  ComponentB: 6ddf2553f47074cb8a8c7896b9d52b32606fede1
 
 PODFILE CHECKSUM: baf480ea0553398b4101e74c5d3c186b5cb7dbc3
 

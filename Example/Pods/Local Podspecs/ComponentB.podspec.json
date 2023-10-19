@@ -1,6 +1,6 @@
 {
   "name": "ComponentB",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "summary": "ComponentB. A short description of",
   "description": "Add long description of the pod here.",
   "homepage": "https://github.com/hunter858/ComponentB",
@@ -13,10 +13,26 @@
   },
   "source": {
     "git": "https://github.com/hunter858/ComponentB.git",
-    "tag": "0.0.2"
+    "tag": "0.0.7"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "ComponentB/Classes/**/*"
+  "source_files": "ComponentB/**/*.h",
+  "vendored_frameworks": "ComponentB/Products/ComponentBBinary.framework",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
 }
