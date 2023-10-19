@@ -1,0 +1,6 @@
+framework module Pods_ComponentB_Example_ComponentBBinary {
+  umbrella header "Pods-ComponentB_Example-ComponentBBinary-umbrella.h"
+
+  export *
+  module * { export * }
+}

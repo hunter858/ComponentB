@@ -1,22 +1,22 @@
 {
   "name": "ComponentB",
-  "version": "0.1.0",
-  "summary": "A short description of ComponentB.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/pengchao/ComponentB",
+  "version": "0.0.2",
+  "summary": "ComponentB. A short description of",
+  "description": "Add long description of the pod here.",
+  "homepage": "https://github.com/hunter858/ComponentB",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "pengchao": "pengchao@dreame.tech"
+    "hunter858": "hunter858@sina.cn"
   },
   "source": {
-    "git": "https://github.com/pengchao/ComponentB.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/hunter858/ComponentB.git",
+    "tag": "0.0.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
   "source_files": "ComponentB/Classes/**/*"
 }

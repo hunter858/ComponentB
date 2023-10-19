@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "Consumter.h"
-#import "Customer.h"
 
-FOUNDATION_EXPORT double ComponentBVersionNumber;
-FOUNDATION_EXPORT const unsigned char ComponentBVersionString[];
+FOUNDATION_EXPORT double Pods_ComponentB_Example_ComponentBBinaryVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ComponentB_Example_ComponentBBinaryVersionString[];
 

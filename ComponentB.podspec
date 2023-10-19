@@ -10,13 +10,6 @@ Pod::Spec.new do |s|
   s.name             = 'ComponentB'
   s.version          = '0.0.2'
   s.summary          = 'ComponentB. A short description of '
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
       Add long description of the pod here.
                        DESC
@@ -27,10 +20,17 @@ Pod::Spec.new do |s|
   s.author           = { 'hunter858' => 'hunter858@sina.cn' }
   s.source           = { :git => 'https://github.com/hunter858/ComponentB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'ComponentB/Classes/**/*'
+  
+  if ENV['CCDemoLib_Source'] || ENV['AllLib_Source']
+      s.source_files = 'ComponentB/Classes/**/*'
+  else
+      s.source_files = 'ComponentB/Classes/**/*'
+      s.vendored_frameworks = 'ComponentB/Products/ComponentBBinary.framework'
+      # s.dependency 'AFNetworking', '~> 2.3'
+      # s.dependency 'SDWebImage', '~> 4.1.0'
+  end
   
   # s.resource_bundles = {
   #   'ComponentB' => ['ComponentB/Assets/*.png']
@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.dependency 'AFNetworking'
 end

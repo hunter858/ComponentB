@@ -1,5 +1,5 @@
 PODS:
-  - ComponentB (0.1.0)
+  - ComponentB (0.0.2)
 
 DEPENDENCIES:
   - ComponentB (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ComponentB: 3a6e06af06d3769987de39781b2778cb4fb8892b
+  ComponentB: 154e8665de40b7d6cede06271ce306316e1b9a83
 
-PODFILE CHECKSUM: e9d0b52778b935704ed6672170cfdb7b24f9d57e
+PODFILE CHECKSUM: baf480ea0553398b4101e74c5d3c186b5cb7dbc3
 
 COCOAPODS: 1.13.0
