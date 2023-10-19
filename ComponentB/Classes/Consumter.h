@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(CGFloat)coastNumber;
 
 -(void)loadReuest;
+-(void)downloadImage;
+
 @end
 
 NS_ASSUME_NONNULL_END

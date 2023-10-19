@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ComponentB'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = 'ComponentB. A short description of '
   s.description      = <<-DESC
       Add long description of the pod here.
@@ -25,11 +25,13 @@ Pod::Spec.new do |s|
   
   if ENV['Lib_Source'] || ENV['AllLib_Source']
       s.source_files = 'ComponentB/Classes/**/*'
+#      s.dependency 'AFNetworking', '~> 4.0.1'
+      s.dependency 'SDWebImage', '~> 4.1.0'
   else
       s.source_files = 'ComponentB/**/*.h'
       s.vendored_frameworks = 'ComponentB/Products/ComponentBBinary.framework'
-      s.dependency 'AFNetworking', '~> 2.3'
-      # s.dependency 'SDWebImage', '~> 4.1.0'
+#      s.dependency 'AFNetworking', '~> 4.0.1'
+      s.dependency 'SDWebImage', '~> 4.1.0'
   end
   
   # s.resource_bundles = {
