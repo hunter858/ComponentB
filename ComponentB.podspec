@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   
-  if ENV['CCDemoLib_Source'] || ENV['AllLib_Source']
+  if ENV['Lib_Source'] || ENV['AllLib_Source']
       s.source_files = 'ComponentB/Classes/**/*'
   else
       s.source_files = 'ComponentB/Classes/**/*'
