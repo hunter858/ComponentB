@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ComponentB'
-  s.version          = '0.0.2'
+  s.version          = '0.0.6'
   s.summary          = 'ComponentB. A short description of '
   s.description      = <<-DESC
       Add long description of the pod here.
