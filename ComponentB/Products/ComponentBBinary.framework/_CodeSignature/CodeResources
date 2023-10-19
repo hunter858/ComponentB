@@ -4,13 +4,44 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/Consumter.h</key>
+		<data>
+		FdvHuIHZ0+pVTqDnl7trwiyViwE=
+		</data>
+		<key>Headers/Customer.h</key>
+		<data>
+		U7UprElMdHRF2Ctb+MQ+Oui2IsI=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		vujy7lRLvi8GR+Gl7AulFW4F578=
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>Headers/Consumter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FdvHuIHZ0+pVTqDnl7trwiyViwE=
+			</data>
+			<key>hash2</key>
+			<data>
+			PUU4iMhzleKrb5H32dMF4lRsPARDuelPsZJ4McASxmc=
+			</data>
+		</dict>
+		<key>Headers/Customer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7UprElMdHRF2Ctb+MQ+Oui2IsI=
+			</data>
+			<key>hash2</key>
+			<data>
+			twR2D2y5e8N+O6wVtmmey5WbUFJsJFx7UFo5jM+0mNM=
+			</data>
+		</dict>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^.*</key>

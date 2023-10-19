@@ -8,5 +8,11 @@
 #import "Consumter.h"
 
 @implementation Consumter
+-(CGFloat)coastNumber{
+    return 100.0;
+}
 
+-(void)loadReuest {
+    
+}
 @end

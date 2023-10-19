@@ -9,5 +9,11 @@
 #import "Customer.h"
 
 @implementation Customer
+-(void)print{
+    NSLog(@"create binary lib success");
+}
 
++ (NSString *)description{
+    return @"create binary lib success";
+}
 @end

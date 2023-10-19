@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Consumter : NSObject
 
+-(CGFloat)coastNumber;
+
+-(void)loadReuest;
 @end
 
 NS_ASSUME_NONNULL_END
