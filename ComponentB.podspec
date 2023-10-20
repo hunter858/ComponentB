@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ComponentB'
-  s.version          = '0.0.10'
-  s.summary          = 'ComponentB. A short description of '
+  s.version          = '0.0.11'
+  s.summary          = '自定义简介，尝试组件化，组件化B'
   s.description      = <<-DESC
       Add long description of the pod here.
                        DESC
