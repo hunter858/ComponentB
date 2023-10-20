@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/hunter858/ComponentB'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hunter858' => 'hunter858@sina.cn' }
+  s.author           = { 'hunter858@sina.cn' => 'hunter858' }
   s.source           = { :git => 'https://github.com/hunter858/ComponentB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '11.0'
